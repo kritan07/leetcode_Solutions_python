@@ -13,7 +13,7 @@
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        seen = set()
+        seen = set() # A set allows O(1) average-time lookup.
         for num in nums:
             if num in seen:
                 return True 
